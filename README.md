@@ -1,5 +1,5 @@
 # Solving Binary Puzzles and Futoshiki as Constraint Satisfaction Problems
-Solving binary puzzles and Futoshiki created as part of the course: Artificial Intelligence and Knowledge Engineering
+Binary and Futoshiki puzzle solver created as part of the Artificial Intelligence and Knowledge Engineering course
 -  
 Constraint Satisfaction Problem (CSP) refers to the problem of satisfying constraints. A solution to a CSP problem is an assignment of values to variables such that all constraints are satisfied. The constraints are defined for the specific problem.  
 
