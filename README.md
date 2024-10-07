@@ -1,24 +1,23 @@
-# Rozwiązywanie łamigłówek binary oraz Futoshiki rozumianych jako problem CSP (Constraint Satisfaction Problem)
-Rozwiązywanie łamigłówek binary i Futoshiki wykonane w ramach przedmiotu Sztuczna Inteligencja i Inżynieria Wiedzy
--
+# Solving Binary Puzzles and Futoshiki as Constraint Satisfaction Problems
+Solving binary puzzles and Futoshiki created as part of the course: Artificial Intelligence and Knowledge Engineering
+-  
+Constraint Satisfaction Problem (CSP) refers to the problem of satisfying constraints. A solution to a CSP problem is an assignment of values to variables such that all constraints are satisfied. The constraints are defined for the specific problem.  
 
-Constraint Satisfaction Problem – problem spełniania ograniczeń. Rozwiązaniem problemu typu CSP jest takie przyporządkowanie wartości do zmiennych, dla którego wszystkie ograniczenia są spełnione. Ograniczenia są zdefiniowane dla konkretnego problemu.
+### Definition of CSP for Binary Puzzles:  
+- Problem domain: n x n board,  
+- Variables: n² fields of the board,  
+- Domains of variables: {0, 1},  
+- Constraints:  
+  - Each row and column must have the same number of 0s and 1s—meaning that neither more 0s nor more 1s than half of n can appear in any row or column,  
+  - Rows must be unique from one another,  
+  - Columns must be unique from one another,  
+  - No three consecutive values of 0 or 1 can appear either horizontally or vertically.  
 
-Definicja CSP dla łamigłówki binary:
-- dziedzina problemu: plansza n x n,
-- zmienne: n^2 pól planszy,
-- dziedziny zmiennych: {0, 1},
-- ograniczenia:
-  - w wierszu i kolumnie musi wystąpić tyle samo wartości 0 co 1 – tzn. w wierszu i kolumnie nie może wystąpić więcej zer lub jedynek niż wynosi połowa 𝑛,
-  - wiersze muszą być unikatowe między sobą,
-  - kolumny muszą być unikatowe między sobą,
-  - ani w poziomie, ani w pionie nie mogą wystąpić trzy sąsiednie wartości 0 ani 1.
-
-Definicja CSP dla łamigłówki Futoshiki:
-- dziedzina problemu: plansza n x n,
-- zmienne: n^2 pól planszy,
-- dziedziny zmiennych: {0, 1},
-- ograniczenia:
-  - wartość nie może powtórzyć się w wierszu,
-  - wartość nie może powtórzyć się w kolumnie,
-  - ograniczenia wynikające ze znaków >,< wpisanych między polami planszy.
+### Definition of CSP for Futoshiki Puzzles:  
+- Problem domain: n x n board,  
+- Variables: n² fields of the board,  
+- Domains of variables: {0, 1},  
+- Constraints:  
+  - A value cannot be repeated in a row,  
+  - A value cannot be repeated in a column,  
+  - Constraints arising from the >,< signs placed between the fields of the board.
